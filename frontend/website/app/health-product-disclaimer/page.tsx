@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Health Product Disclaimer",
     description:
-        "Important health and safety information for food, nutrition, and wellness products sold by Shop Dr Hasan Nasir.",
+        "Important health and safety information for food, nutrition, and wellness products sold by Zaade Sehat by Dr Hasan Nasir.",
 };
 
 export default function HealthProductDisclaimerPage() {
@@ -134,10 +134,11 @@ export default function HealthProductDisclaimerPage() {
                         Product quality concern
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        If a delivered product is leaking, damaged, unsealed,
-                        tampered with, expired, or different from what you
-                        ordered, do not use it. Keep the product and packaging
-                        and contact us within 7 calendar days under the{" "}
+                        If a product from Zaade Sehat by Dr Hasan Nasir is
+                        leaking, damaged, unsealed, tampered with, expired, or
+                        different from what you ordered, do not use it. Keep the
+                        product and packaging and contact us within 7 calendar
+                        days under the{" "}
                         <Link
                             href="/refund-cancellation-policy"
                             className="text-sage-deep hover:underline"
@@ -151,11 +152,12 @@ export default function HealthProductDisclaimerPage() {
                         Professional consultation
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        Booking an appointment is separate from purchasing a
-                        product. A website order does not establish a
-                        doctor-patient relationship. A professional relationship
-                        begins only through an actual consultation accepted by
-                        Dr. Hasan Nasir and is subject to the applicable booking
+                        Booking an appointment with Dr. Hasan Nasir Cheema is
+                        separate from purchasing a Zaade Sehat product. A
+                        website order does not establish a doctor-patient
+                        relationship. A professional relationship begins only
+                        through an actual consultation accepted by Dr. Hasan
+                        Nasir Cheema and is subject to the applicable booking
                         terms.
                     </p>
 

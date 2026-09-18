@@ -11,9 +11,9 @@ import {
 import WhatsAppFloatButton from "@/components/WhatsAppFloatButton";
 
 export const metadata: Metadata = {
-    title: "Dr. Hasan Nasir Cheema Clinic",
+    title: "Consultant Physician",
     description:
-        "Book an in-person consultation with Dr. Hasan Nasir Cheema online, or browse health and wellness products from Shop Dr Hasan Nasir.",
+        "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Visit Zaade Sehat by Dr Hasan Nasir for separately branded health and wellness products.",
 };
 
 const steps = [
@@ -64,9 +64,9 @@ export default function HomePage() {
                                 <p className="reveal reveal-d2 mt-5 max-w-[46ch] text-[1.1rem] text-ink-soft">
                                     Book your consultation online, choose an
                                     available appointment, and pay in advance to
-                                    secure your time. You can also explore
-                                    health and wellness products in our online
-                                    shop.
+                                    secure your time. Health and wellness
+                                    products are available separately from
+                                    Zaade Sehat by Dr Hasan Nasir.
                                 </p>
                                 <div className="reveal reveal-d3 mt-8 flex flex-wrap gap-4">
                                     <Link
@@ -79,7 +79,7 @@ export default function HomePage() {
                                         href="/products"
                                         className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition hover:border-ink hover:no-underline"
                                     >
-                                        Visit the Shop
+                                        Shop Zaade Sehat
                                     </Link>
                                     <a
                                         id="whatsapp-hero-cta"
@@ -292,7 +292,7 @@ export default function HomePage() {
                                     Online consultation · 12:00 PM–5:00 PM
                                 </span>
                                 <span className="block">
-                                    Clinic time · 6:00 PM–9:00 PM
+                                    In-person consultations · 6:00 PM–9:00 PM
                                 </span>
                             </p>
                         </div>
@@ -307,7 +307,7 @@ export default function HomePage() {
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            title="Dr. Hasan Nasir Cheema Clinic location"
+                            title="Dr. Hasan Nasir Cheema consultation location"
                         />
                     </div>
 

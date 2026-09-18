@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Shipping & Delivery Policy",
     description:
-        "Delivery areas, charges, order handling, and delivery issue reporting for Shop Dr Hasan Nasir.",
+        "Delivery areas, charges, order handling, and delivery issue reporting for Zaade Sehat by Dr Hasan Nasir.",
 };
 
 export default function ShippingDeliveryPolicyPage() {
@@ -28,8 +28,10 @@ export default function ShippingDeliveryPolicyPage() {
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
                         This policy applies to physical products ordered from
+                        Zaade Sehat by Dr Hasan Nasir at
                         shop.drhasannasir.com. Appointment bookings are not
-                        shipped and are governed by the appointment terms in our{" "}
+                        product orders and are governed by the consultation terms
+                        in our{" "}
                         <Link
                             href="/terms-of-service"
                             className="text-sage-deep hover:underline"

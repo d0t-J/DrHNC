@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Terms and Conditions",
     description:
-        "Terms governing product purchases, website use, and appointment bookings with Dr. Hasan Nasir.",
+        "Terms governing consultations with Dr. Hasan Nasir Cheema and purchases from Zaade Sehat by Dr Hasan Nasir.",
 };
 
 export default function TermsOfServicePage() {
@@ -28,19 +28,22 @@ export default function TermsOfServicePage() {
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
                         These terms apply when you use drhasannasir.com or
-                        shop.drhasannasir.com, purchase a product, or book an
-                        appointment with Dr. Hasan Nasir. By placing an order or
-                        completing a booking, you agree to these terms and the
-                        policies linked below.
+                        shop.drhasannasir.com, purchase a product, or book a
+                        consultation with Dr. Hasan Nasir Cheema. Consultation
+                        services and product orders are distinct services, with
+                        the applicable terms set out below.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Seller and contact details
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        The products and appointment services are offered by Dr.
-                        Hasan Nasir, Street 4, Chak 199, Gattwala, East Canal
-                        Road, Faisalabad, Pakistan. Contact: +92 331 6507678 or{" "}
+                        Consultations are offered by Dr. Hasan Nasir Cheema.
+                        Health and wellness products available through
+                        shop.drhasannasir.com are offered under the separate
+                        retail brand Zaade Sehat by Dr Hasan Nasir. Contact:
+                        Street 4, Chak 199, Gattwala, East Canal Road,
+                        Faisalabad, Pakistan; +92 331 6507678; or{" "}
                         <a
                             href="mailto:drhasannasir12@gmail.com"
                             className="text-sage-deep hover:underline"
@@ -167,19 +170,20 @@ export default function TermsOfServicePage() {
                             to 5:00 PM.
                         </li>
                         <li>
-                            Clinic consultations are offered daily from 6:00 PM
-                            to 9:00 PM.
+                            In-person consultations are offered daily from 6:00
+                            PM to 9:00 PM.
                         </li>
                         <li>Each appointment slot is 10 minutes.</li>
                         <li>
                             An appointment is confirmed only after full advance
-                            payment and confirmation from the clinic.
+                            payment and confirmation from Dr. Hasan Nasir
+                            Cheema.
                         </li>
                         <li>
                             Patient-initiated requests are final after
                             confirmation: no cancellation, no rescheduling, and
-                            no refund. If Dr. Hasan Nasir cancels, the advance
-                            payment will be refunded in full.
+                            no refund. If Dr. Hasan Nasir Cheema cancels, the
+                            advance payment will be refunded in full.
                         </li>
                     </ul>
 
@@ -200,8 +204,9 @@ export default function TermsOfServicePage() {
                     <p className="mt-3 text-ink-soft">
                         Unless otherwise stated, website text, branding, design,
                         photographs, graphics, and other content are owned by or
-                        licensed to Dr. Hasan Nasir. They may not be reproduced
-                        or commercially used without written permission.
+                        licensed to Dr. Hasan Nasir Cheema. They may not be
+                        reproduced or commercially used without written
+                        permission.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -209,12 +214,12 @@ export default function TermsOfServicePage() {
                     </h2>
                     <p className="mt-3 text-ink-soft">
                         To the maximum extent permitted by Pakistani law, Dr.
-                        Hasan Nasir is not liable for indirect, incidental, or
-                        consequential loss arising from website use, delivery
-                        delay outside reasonable control, misuse of a product,
-                        failure to follow label instructions, or interruptions
-                        involving hosting, communications, couriers, or payment
-                        providers.
+                        Hasan Nasir Cheema is not liable for indirect,
+                        incidental, or consequential loss arising from website
+                        use, delivery delay outside reasonable control, misuse
+                        of a product, failure to follow label instructions, or
+                        interruptions involving hosting, communications,
+                        couriers, or payment providers.
                     </p>
                     <p className="mt-3 text-ink-soft">
                         Nothing in these terms excludes liability or consumer

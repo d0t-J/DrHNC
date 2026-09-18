@@ -33,8 +33,20 @@ export default function Footer() {
                     {/* Left: legal identity + social */}
                     <div className="space-y-4">
                         <p className="text-sm text-mist/70 max-w-[38ch]">
-                            Dr. Hasan Nasir &middot; Street 4, Chak 199,
-                            Gattwala, East Canal Road, Faisalabad
+                            Consultations with Dr. Hasan Nasir Cheema &middot;
+                            Street 4, Chak 199, Gattwala, East Canal Road,
+                            Faisalabad
+                        </p>
+                        <p className="text-sm text-mist/70 max-w-[38ch]">
+                            Health and wellness products are available separately
+                            from{" "}
+                            <a
+                                href="https://shop.drhasannasir.com/"
+                                className="text-mist hover:text-white underline underline-offset-2"
+                            >
+                                Zaade Sehat by Dr Hasan Nasir
+                            </a>
+                            .
                         </p>
                         <div className="flex items-center gap-1">
                             <FacebookIcon
@@ -74,7 +86,7 @@ export default function Footer() {
                 </div>
 
                 <p className="mt-7 border-t border-mist/15 pt-4 text-[0.78rem] text-mist/50">
-                    &copy; {year} Dr. Hasan Nasir. All rights reserved.
+                    &copy; {year} Dr. Hasan Nasir Cheema. All rights reserved.
                 </p>
             </div>
         </footer>

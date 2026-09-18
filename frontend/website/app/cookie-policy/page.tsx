@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Cookie Policy",
     description:
-        "How drhasannasir.com and shop.drhasannasir.com use cookies and similar technologies.",
+        "How Dr. Hasan Nasir Cheema's consultation site and Zaade Sehat shop use cookies and similar technologies.",
 };
 
 export default function CookiePolicyPage() {
@@ -27,9 +27,11 @@ export default function CookiePolicyPage() {
             <section className="px-7 pb-20">
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
-                        This policy explains how drhasannasir.com and
-                        shop.drhasannasir.com use cookies and similar
-                        technologies. It should be read with our{" "}
+                        This policy explains how drhasannasir.com, for
+                        consultations with Dr. Hasan Nasir Cheema, and
+                        shop.drhasannasir.com, the Zaade Sehat by Dr Hasan Nasir
+                        retail shop, use cookies and similar technologies. It
+                        should be read with our{" "}
                         <Link
                             href="/privacy-policy"
                             className="text-sage-deep hover:underline"

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         template: "%s | Dr. Hasan Nasir Cheema",
     },
     description:
-        "Book an in-person consultation with Dr. Hasan Nasir Cheema online, or browse health and wellness products from Shop Dr Hasan Nasir.",
+        "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Health and wellness products are available separately from Zaade Sehat by Dr Hasan Nasir.",
 };
 
 export default function RootLayout({

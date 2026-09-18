@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Privacy Policy",
     description:
-        "How Dr. Hasan Nasir collects, uses, stores, and protects information for online orders and appointment bookings.",
+        "How Dr. Hasan Nasir Cheema handles information for consultations and Zaade Sehat product orders.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,22 +27,24 @@ export default function PrivacyPolicyPage() {
             <section className="px-7 pb-20">
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
-                        This policy explains how Dr. Hasan Nasir
+                        This policy explains how Dr. Hasan Nasir Cheema
                         (&ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses,
                         shares, and protects personal information when you use
                         drhasannasir.com, shop.drhasannasir.com, purchase a
-                        product, book a consultation, or contact the clinic.
+                        product from Zaade Sehat by Dr Hasan Nasir, book a
+                        consultation, or contact us.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Who is responsible for your information
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        Dr. Hasan Nasir is responsible for the personal
-                        information described in this policy. The clinic is
-                        located at Street 4, Chak 199, Gattwala, East Canal
-                        Road, Faisalabad, Pakistan. Privacy questions can be
-                        sent to{" "}
+                        Dr. Hasan Nasir Cheema is responsible for the personal
+                        information described in this policy. Zaade Sehat by Dr
+                        Hasan Nasir is the separate retail brand used for
+                        product orders. Our consultation location is Street 4,
+                        Chak 199, Gattwala, East Canal Road, Faisalabad,
+                        Pakistan. Privacy questions can be sent to{" "}
                         <a
                             href="mailto:drhasannasir12@gmail.com"
                             className="text-sage-deep hover:underline"

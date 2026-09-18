@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Refund, Return & Cancellation Policy",
     description:
-        "Returns and refunds for products, plus cancellation terms for appointments with Dr. Hasan Nasir.",
+        "Returns and refunds for Zaade Sehat products, plus cancellation terms for appointments with Dr. Hasan Nasir Cheema.",
 };
 
 export default function RefundCancellationPolicyPage() {
@@ -27,10 +27,12 @@ export default function RefundCancellationPolicyPage() {
             <section className="px-7 pb-20">
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
-                        This policy separates physical product orders from
-                        appointment bookings. Different rules apply to each.
-                        Nothing in this policy limits a right or remedy that
-                        cannot be excluded under applicable consumer law.
+                        This policy separates product orders placed through
+                        Zaade Sehat by Dr Hasan Nasir from consultation
+                        bookings with Dr. Hasan Nasir Cheema. Different rules
+                        apply to each. Nothing in this policy limits a right or
+                        remedy that cannot be excluded under applicable consumer
+                        law.
                     </p>
 
                     <div className="rounded-xl border border-sage/30 bg-sage/10 px-6 py-5 mt-8 mb-10">
@@ -175,8 +177,9 @@ export default function RefundCancellationPolicyPage() {
                             or rescheduled by the patient.
                         </li>
                         <li>
-                            If Dr. Hasan Nasir cancels a confirmed appointment,
-                            the advance payment will be refunded in full.
+                            If Dr. Hasan Nasir Cheema cancels a confirmed
+                            appointment, the advance payment will be refunded in
+                            full.
                         </li>
                     </ul>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Legal Information",
     description:
-        "Policies and legal information for Dr. Hasan Nasir's website, consultations, and online shop.",
+        "Policies and legal information for Dr. Hasan Nasir Cheema's consultation services and Zaade Sehat product shop.",
 };
 
 const policies = [
@@ -51,8 +51,9 @@ export default function LegalPage() {
                     Policies &amp; legal information
                 </h1>
                 <p className="mt-4 max-w-[58ch] text-ink-soft">
-                    Read the policies that apply to this website, online shop,
-                    and consultation services.
+                    Read the policies that apply to consultation services with
+                    Dr. Hasan Nasir Cheema and to products sold separately
+                    through Zaade Sehat by Dr Hasan Nasir.
                 </p>
 
                 <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
