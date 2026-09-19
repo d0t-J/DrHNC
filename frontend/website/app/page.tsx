@@ -11,7 +11,7 @@ import {
 import WhatsAppFloatButton from "@/components/WhatsAppFloatButton";
 
 export const metadata: Metadata = {
-    title: "Consultant Physician",
+    title: "Dr. Hasan Nasir Cheema Clinic",
     description:
         "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Visit Zaade Sehat by Dr Hasan Nasir for separately branded health and wellness products.",
 };
