@@ -107,7 +107,22 @@ The template is `frontend/website/.env.local.example`. The real `.env` files are
 
 ## Deployment
 
-The site runs as a standard Node.js server (`next start`) and has no Vercel-specific dependencies. To deploy it on any Node.js host (for example Hostinger's Node.js Web App hosting):
+The site runs as a standard Node.js server (`next start`) and has no Vercel-specific dependencies.
+
+### Railway
+
+The site is deployed on [Railway](https://railway.com) from this GitHub repository. Build and deploy settings live in `frontend/website/railway.json` (Railpack builder, `npm run build`, `npm start`, health check on `/`).
+
+Service settings in the Railway dashboard:
+
+- **Source → Root Directory:** `/frontend/website`
+- **Config-as-code → Railway Config File:** `/frontend/website/railway.json` (Railway does not look for this file inside the root directory on its own, so the absolute path is required)
+- **Variables:** `NEXT_PUBLIC_WHATSAPP_NUMBER`, and `RAILPACK_NODE_VERSION=22` to pin Node.js 22
+- **Networking:** generate a Railway domain to test, then add `drhasannasir.com` and `www.drhasannasir.com` as custom domains
+
+Railway provides the `PORT` variable and `next start` listens on it. Service variables are available during the build, which `NEXT_PUBLIC_*` values need. Do not set `NODE_ENV=production` as a service variable: the build needs the dev dependencies (TypeScript, Tailwind CSS, PostCSS).
+
+### Other Node.js hosts
 
 - **Root directory:** `frontend/website`
 - **Node.js version:** 22.x (20.9 or later is supported)
@@ -115,6 +130,6 @@ The site runs as a standard Node.js server (`next start`) and has no Vercel-spec
 - **Build:** `npm run build`
 - **Start:** `npm start` (listens on the `PORT` environment variable)
 
-Do not set `NODE_ENV=production` before `npm install`: the build needs the dev dependencies (TypeScript, Tailwind CSS, PostCSS). Do not upload `node_modules/`, `.next/` or `.env`; the host installs and builds the project itself.
+Do not upload `node_modules/`, `.next/` or `.env`; the host installs and builds the project itself.
 
 The WooCommerce store at `shop.drhasannasir.com` is a separate WordPress site. This repository only links to it.
