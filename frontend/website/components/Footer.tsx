@@ -5,6 +5,7 @@ import {
     WhatsAppIcon,
     YouTubeIcon,
 } from "@/components/SocialIcons";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const policyLinks = [
     { href: "/privacy-policy", label: "Privacy Policy" },
@@ -20,7 +21,6 @@ const policyLinks = [
 
 const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582055819875";
 const YOUTUBE_URL = "https://www.youtube.com/@dr.hasannasir9200/";
-const WHATSAPP_URL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "923316507678"}`;
 const EMAIL_ADDRESS = "drhasannasir12@gmail.com";
 
 export default function Footer() {

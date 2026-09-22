@@ -99,11 +99,19 @@ The template is `frontend/website/.env.local.example`. The real `.env` files are
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp click-to-chat number, digits only (e.g. `923001234567`) |
 | `NEXT_PUBLIC_PAGE_ID` | Facebook Page ID for the m.me deep link |
 | `NEXT_PUBLIC_BOOKING_LIVE` | Booking form switch, off by default. Set it to `true` only when booking and payments are live |
 
-`NEXT_PUBLIC_*` values are compiled into the site, so set them before running `npm run build`. If `NEXT_PUBLIC_WHATSAPP_NUMBER` is not set, the site falls back to the number hardcoded in `app/page.tsx` and `components/Footer.tsx`.
+`NEXT_PUBLIC_*` values are compiled into the site, so set them before running `npm run build`.
+
+## Contact numbers
+
+Phone numbers are defined once in `frontend/website/lib/contact.ts`:
+
+- **Online consultation** (`+92 316 688 6161`): the main public number. Every WhatsApp link and button on the site uses it, and the legal pages list it for questions and order support.
+- **Clinic** (`+92 324 720 0066`): for people planning an in-person visit. It appears in the home page contact section and the Terms and Conditions.
+
+To change a number, edit that file only.
 
 ## Deployment
 
@@ -117,7 +125,7 @@ Service settings in the Railway dashboard:
 
 - **Source → Root Directory:** `/frontend/website`
 - **Config-as-code → Railway Config File:** `/frontend/website/railway.json` (Railway does not look for this file inside the root directory on its own, so the absolute path is required)
-- **Variables:** `NEXT_PUBLIC_WHATSAPP_NUMBER`, and `RAILPACK_NODE_VERSION=22` to pin Node.js 22
+- **Variables:** `RAILPACK_NODE_VERSION=22` to pin Node.js 22
 - **Networking:** generate a Railway domain to test, then add `drhasannasir.com` and `www.drhasannasir.com` as custom domains
 
 Railway provides the `PORT` variable and `next start` listens on it. Service variables are available during the build, which `NEXT_PUBLIC_*` values need. Do not set `NODE_ENV=production` as a service variable: the build needs the dev dependencies (TypeScript, Tailwind CSS, PostCSS).

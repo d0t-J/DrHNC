@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 
 export const metadata: Metadata = {
     title: "Shipping & Delivery Policy",
@@ -152,7 +153,8 @@ export default function ShippingDeliveryPolicyPage() {
                         >
                             drhasannasir12@gmail.com
                         </a>{" "}
-                        or call +92 331 6507678. Include your order number if
+                        or call {ONLINE_CONSULTATION_PHONE.display}. Include
+                        your order number if
                         one was provided in your order confirmation.
                     </p>
 

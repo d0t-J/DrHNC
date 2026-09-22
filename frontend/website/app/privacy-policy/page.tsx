@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 
 export const metadata: Metadata = {
     title: "Privacy Policy",
@@ -266,10 +267,10 @@ export default function PrivacyPolicyPage() {
                         </a>{" "}
                         or call{" "}
                         <a
-                            href="tel:+923316507678"
+                            href={ONLINE_CONSULTATION_PHONE.tel}
                             className="text-sage-deep hover:underline"
                         >
-                            +92 331 6507678
+                            {ONLINE_CONSULTATION_PHONE.display}
                         </a>{" "}
                         with privacy questions or requests.
                     </p>

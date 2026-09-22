@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 
 export const metadata: Metadata = {
     title: "Refund, Return & Cancellation Policy",
@@ -90,7 +91,8 @@ export default function RefundCancellationPolicyPage() {
                             >
                                 drhasannasir12@gmail.com
                             </a>{" "}
-                            or call +92 331 6507678 within 7 calendar days of
+                            or call {ONLINE_CONSULTATION_PHONE.display} within 7
+                            calendar days of
                             delivery.
                         </li>
                         <li>

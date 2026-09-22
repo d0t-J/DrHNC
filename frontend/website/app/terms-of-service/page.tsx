@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CLINIC_PHONE, ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 
 export const metadata: Metadata = {
     title: "Terms and Conditions",
@@ -43,7 +44,9 @@ export default function TermsOfServicePage() {
                         shop.drhasannasir.com are offered under the separate
                         retail brand Zaade Sehat by Dr Hasan Nasir. Contact:
                         Street 4, Chak 199, Gattwala, East Canal Road,
-                        Faisalabad, Pakistan; +92 331 6507678; or{" "}
+                        Faisalabad, Pakistan; online consultation{" "}
+                        {ONLINE_CONSULTATION_PHONE.display}; clinic{" "}
+                        {CLINIC_PHONE.display}; or{" "}
                         <a
                             href="mailto:drhasannasir12@gmail.com"
                             className="text-sage-deep hover:underline"

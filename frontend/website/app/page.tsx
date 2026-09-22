@@ -9,6 +9,11 @@ import {
     YouTubeIcon,
 } from "@/components/SocialIcons";
 import WhatsAppFloatButton from "@/components/WhatsAppFloatButton";
+import {
+    CLINIC_PHONE,
+    ONLINE_CONSULTATION_PHONE,
+    WHATSAPP_URL,
+} from "@/lib/contact";
 
 export const metadata: Metadata = {
     title: "Dr. Hasan Nasir Cheema Clinic",
@@ -39,7 +44,7 @@ const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61582055819875";
 const YOUTUBE_URL = "https://www.youtube.com/@dr.hasannasir9200/";
 
 export default function HomePage() {
-    const waLink = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "923316507678"}`;
+    const waLink = WHATSAPP_URL;
 
     return (
         <>
@@ -251,6 +256,49 @@ export default function HomePage() {
                     </h2>
 
                     <div className="mt-8 grid sm:grid-cols-2 gap-7">
+                        <div className="sm:col-span-2 rounded-xl border border-line-soft bg-paper-raised p-5">
+                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
+                                Phone
+                            </p>
+                            <div className="mt-3 grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <p className="text-[0.85rem] font-semibold text-ink">
+                                        Online consultation
+                                    </p>
+                                    <a
+                                        href={waLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-1 block text-[1.02rem] text-sage-deep hover:underline"
+                                    >
+                                        {ONLINE_CONSULTATION_PHONE.display}
+                                    </a>
+                                    <p className="mt-1 text-[0.85rem] text-ink-soft">
+                                        WhatsApp or call · 12:00 PM–5:00 PM
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-[0.85rem] font-semibold text-ink">
+                                        Clinic · in-person visits
+                                    </p>
+                                    <a
+                                        href={CLINIC_PHONE.tel}
+                                        className="mt-1 block text-[1.02rem] text-sage-deep hover:underline"
+                                    >
+                                        {CLINIC_PHONE.display}
+                                    </a>
+                                    <p className="mt-1 text-[0.85rem] text-ink-soft">
+                                        In-person consultations · 6:00 PM–9:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <p className="mt-4 border-t border-line-soft pt-3 text-[0.85rem] text-ink-soft">
+                                These are separate lines. For online
+                                consultations and general questions, use the
+                                online consultation number. Call the clinic
+                                number only if you plan to visit the clinic.
+                            </p>
+                        </div>
                         <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
                             <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
                                 Address
@@ -262,18 +310,6 @@ export default function HomePage() {
                         </div>
                         <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
                             <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
-                                Phone
-                            </p>
-                            <a
-                                href={waLink}
-                                target="_blank"
-                                className="mt-1.5 block text-[1.02rem] text-sage-deep hover:underline"
-                            >
-                                +92 331 650 7678
-                            </a>
-                        </div>
-                        <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
-                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
                                 Email
                             </p>
                             <a
@@ -282,19 +318,6 @@ export default function HomePage() {
                             >
                                 drhasannasir12@gmail.com
                             </a>
-                        </div>
-                        <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
-                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
-                                Hours
-                            </p>
-                            <p className="mt-1.5 text-[1.02rem] text-ink">
-                                <span className="block">
-                                    Online consultation · 12:00 PM–5:00 PM
-                                </span>
-                                <span className="block">
-                                    In-person consultations · 6:00 PM–9:00 PM
-                                </span>
-                            </p>
                         </div>
                     </div>
 
