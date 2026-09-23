@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
     title: "Dr. Hasan Nasir Cheema Clinic",
     description:
-        "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Visit Zaade Sehat by Dr Hasan Nasir for separately branded health and wellness products.",
+        "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Visit Zaade Sehat by Dr. Hasan Nasir Cheema for separately branded health and wellness products.",
 };
 
 const steps = [
@@ -48,10 +48,7 @@ export default function HomePage() {
 
     return (
         <>
-            <WhatsAppFloatButton
-                href={waLink}
-                targetId="whatsapp-hero-cta"
-            />
+            <WhatsAppFloatButton href={waLink} targetId="whatsapp-hero-cta" />
             {/* ── Hero + About ────────────────────────────────────────── */}
             <div className="px-7 bg-gradient-to-b from-mist/60 via-mist/20 to-paper pb-4">
                 <div className="mx-auto max-w-content">
@@ -70,19 +67,19 @@ export default function HomePage() {
                                     Book your consultation online, choose an
                                     available appointment, and pay in advance to
                                     secure your time. Health and wellness
-                                    products are available separately from
-                                    Zaade Sehat by Dr Hasan Nasir.
+                                    products are available separately from Zaade
+                                    Sehat by Dr. Hasan Nasir Cheema.
                                 </p>
                                 <div className="reveal reveal-d3 mt-8 flex flex-wrap gap-4">
                                     <Link
                                         href="/booking"
-                                        className="inline-flex items-center gap-2 rounded-full bg-honey px-6 py-3.5 text-[0.95rem] font-semibold text-white no-underline transition hover:bg-honey-deep hover:-translate-y-px hover:no-underline"
+                                        className="inline-flex items-center gap-2 rounded-full bg-honey px-6 py-3.5 text-[0.95rem] font-semibold text-white no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-white hover:shadow-md hover:no-underline"
                                     >
                                         Book Now
                                     </Link>
                                     <Link
                                         href="/products"
-                                        className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition hover:border-ink hover:no-underline"
+                                        className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition-colors duration-200 hover:border-forest-deep hover:bg-forest-deep hover:text-white hover:no-underline"
                                     >
                                         Shop Zaade Sehat
                                     </Link>
@@ -92,7 +89,7 @@ export default function HomePage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         aria-label="Message Dr. Hasan Nasir Cheema on WhatsApp"
-                                        className="inline-flex items-center gap-2 rounded-full bg-sage px-6 py-3.5 text-[0.95rem] font-semibold text-white no-underline transition hover:bg-sage-deep hover:-translate-y-px hover:no-underline"
+                                        className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3.5 text-[0.95rem] font-semibold text-forest-deep no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-whatsapp hover:shadow-md hover:no-underline"
                                     >
                                         Message on WhatsApp
                                     </a>
@@ -288,7 +285,8 @@ export default function HomePage() {
                                         {CLINIC_PHONE.display}
                                     </a>
                                     <p className="mt-1 text-[0.85rem] text-ink-soft">
-                                        In-person consultations · 6:00 PM–9:00 PM
+                                        In-person consultations · 6:00 PM–9:00
+                                        PM
                                     </p>
                                 </div>
                             </div>

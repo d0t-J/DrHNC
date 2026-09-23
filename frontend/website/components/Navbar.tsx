@@ -23,21 +23,19 @@ export default function Navbar() {
 
     return (
         <header
-            className={`sticky top-0 z-50 transition-colors duration-300 ${
-                scrolled
-                    ? "bg-paper/90 backdrop-blur-sm border-b border-line-soft"
-                    : "bg-transparent border-b border-transparent"
+            className={`sticky top-0 z-50 bg-forest-deep transition-shadow duration-300 ${
+                scrolled ? "shadow-md" : ""
             }`}
         >
             <div className="mx-auto flex max-w-content items-center justify-between px-7 h-[72px]">
                 {/* Brand */}
                 <Link href="/" className="no-underline hover:no-underline">
-                    <span className="font-display text-xl font-semibold tracking-wide text-ink leading-tight">
+                    <span className="font-display text-xl font-semibold tracking-wide text-paper leading-tight">
                         Dr. Hasan Nasir Cheema
-                        <small className="block font-body text-[0.65rem] font-medium tracking-[0.08em] uppercase text-ink-soft">
+                        <small className="block font-body text-[0.65rem] font-medium tracking-[0.08em] uppercase text-paper/75">
                             Consultant Physician
                         </small>
-                        <small className="block font-body text-[0.65rem] font-normal tracking-[0.08em] text-ink-soft mt-0.5">
+                        <small className="block font-body text-[0.65rem] font-normal tracking-[0.08em] text-paper/75 mt-0.5">
                             MBBS · BMJ · M.Phil · Food &amp; Nutrition
                         </small>
                     </span>
@@ -45,17 +43,17 @@ export default function Navbar() {
 
                 {/* Desktop nav */}
                 <nav
-                    className="hidden md:flex items-center gap-8"
+                    className="hidden md:flex items-center gap-2"
                     aria-label="Main navigation"
                 >
                     {navLinks.map((l) => (
                         <Link
                             key={l.href}
                             href={l.href}
-                            className={`inline-flex items-center text-[0.92rem] no-underline hover:text-sage-deep hover:no-underline transition-colors ${
+                            className={`inline-flex items-center rounded-full px-3 py-2 text-[0.92rem] no-underline transition-colors duration-200 hover:bg-forest-soft hover:text-white hover:no-underline ${
                                 l.emphasized
-                                    ? "font-semibold text-ink"
-                                    : "font-medium text-ink-soft"
+                                    ? "font-semibold text-paper"
+                                    : "font-medium text-paper/75"
                             }`}
                         >
                             {l.label}
@@ -65,7 +63,7 @@ export default function Navbar() {
 
                 {/* Mobile toggle */}
                 <button
-                    className="md:hidden rounded-lg border border-line px-3 py-2 text-ink text-sm font-medium"
+                    className="md:hidden rounded-lg border border-paper/40 px-3 py-2 text-paper text-sm font-medium transition-colors duration-200 hover:bg-forest-soft hover:text-white"
                     aria-label="Toggle menu"
                     aria-expanded={open}
                     onClick={() => setOpen((v) => !v)}
@@ -77,19 +75,17 @@ export default function Navbar() {
             {/* Mobile nav */}
             {open && (
                 <nav
-                    className={`md:hidden flex flex-col gap-4 px-7 pb-5 border-t border-line-soft ${
-                        scrolled ? "bg-paper/90 backdrop-blur-sm" : "bg-paper"
-                    }`}
+                    className="md:hidden flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-paper/15 bg-forest-deep"
                     aria-label="Mobile navigation"
                 >
                     {navLinks.map((l) => (
                         <Link
                             key={l.href}
                             href={l.href}
-                            className={`inline-flex w-fit items-center text-[0.92rem] no-underline hover:text-sage-deep transition-colors ${
+                            className={`inline-flex w-fit items-center rounded-full px-3 py-2 text-[0.92rem] no-underline transition-colors duration-200 hover:bg-forest-soft hover:text-white ${
                                 l.emphasized
-                                    ? "font-semibold text-ink"
-                                    : "font-medium text-ink-soft"
+                                    ? "font-semibold text-paper"
+                                    : "font-medium text-paper/75"
                             }`}
                             onClick={() => setOpen(false)}
                         >

@@ -5,7 +5,7 @@ import { ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 export const metadata: Metadata = {
     title: "Shipping & Delivery Policy",
     description:
-        "Delivery areas, charges, order handling, and delivery issue reporting for Zaade Sehat by Dr Hasan Nasir.",
+        "Delivery areas, charges, order handling, and delivery issue reporting for Zaade Sehat by Dr. Hasan Nasir Cheema.",
 };
 
 export default function ShippingDeliveryPolicyPage() {
@@ -29,10 +29,10 @@ export default function ShippingDeliveryPolicyPage() {
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
                         This policy applies to physical products ordered from
-                        Zaade Sehat by Dr Hasan Nasir at
+                        Zaade Sehat by Dr. Hasan Nasir Cheema at
                         shop.drhasannasir.com. Appointment bookings are not
-                        product orders and are governed by the consultation terms
-                        in our{" "}
+                        product orders and are governed by the consultation
+                        terms in our{" "}
                         <Link
                             href="/terms-of-service"
                             className="text-sage-deep hover:underline"
@@ -59,10 +59,11 @@ export default function ShippingDeliveryPolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         Available delivery methods, charges, and any estimated
                         delivery period are shown at checkout or communicated
-                        with the order confirmation. Estimates are not guaranteed
-                        and begin after payment and order verification. Remote
-                        areas, weekends, public holidays, weather, transport
-                        disruption, and courier capacity may extend delivery.
+                        with the order confirmation. Estimates are not
+                        guaranteed and begin after payment and order
+                        verification. Remote areas, weekends, public holidays,
+                        weather, transport disruption, and courier capacity may
+                        extend delivery.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -70,22 +71,23 @@ export default function ShippingDeliveryPolicyPage() {
                     </h2>
                     <p className="mt-3 text-ink-soft">
                         Orders are prepared after payment is confirmed. We may
-                        contact you to verify an order, payment, phone number, or
-                        delivery address. Dispatch may be delayed until requested
-                        verification is completed. If an item becomes unavailable
-                        before dispatch, we will contact you to arrange a suitable
-                        replacement or refund the unavailable item.
+                        contact you to verify an order, payment, phone number,
+                        or delivery address. Dispatch may be delayed until
+                        requested verification is completed. If an item becomes
+                        unavailable before dispatch, we will contact you to
+                        arrange a suitable replacement or refund the unavailable
+                        item.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Address and contact details
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        You are responsible for providing a complete and accurate
-                        recipient name, telephone number, delivery address, city,
-                        and any directions reasonably needed by the courier.
-                        Contact us immediately if a correction is required. We
-                        cannot guarantee a change after dispatch.
+                        You are responsible for providing a complete and
+                        accurate recipient name, telephone number, delivery
+                        address, city, and any directions reasonably needed by
+                        the courier. Contact us immediately if a correction is
+                        required. We cannot guarantee a change after dispatch.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -94,10 +96,10 @@ export default function ShippingDeliveryPolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         Tracking information will be shared when supported by
                         the courier. Delivery may require a signature, one-time
-                        code, telephone confirmation, or another proof of receipt.
-                        Responsibility for the parcel passes to you or your
-                        nominated recipient when delivery is recorded at the
-                        supplied address.
+                        code, telephone confirmation, or another proof of
+                        receipt. Responsibility for the parcel passes to you or
+                        your nominated recipient when delivery is recorded at
+                        the supplied address.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -106,9 +108,10 @@ export default function ShippingDeliveryPolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         Inspect the outer package and products promptly after
                         delivery. Do not consume a product if its container is
-                        leaking, its seal is broken, it appears tampered with, or
-                        it is expired. Keep the parcel, courier label, product,
-                        packaging, and invoice while a claim is reviewed.
+                        leaking, its seal is broken, it appears tampered with,
+                        or it is expired. Keep the parcel, courier label,
+                        product, packaging, and invoice while a claim is
+                        reviewed.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -119,8 +122,9 @@ export default function ShippingDeliveryPolicyPage() {
                         parcel is marked delivered but was not received, or it
                         arrives damaged. For visible damage or an incorrect,
                         tampered, leaking, or expired product, notify us within
-                        7 calendar days of delivery and include your order number
-                        and clear photographs. The process is explained in our{" "}
+                        7 calendar days of delivery and include your order
+                        number and clear photographs. The process is explained
+                        in our{" "}
                         <Link
                             href="/refund-cancellation-policy"
                             className="text-sage-deep hover:underline"
@@ -134,12 +138,13 @@ export default function ShippingDeliveryPolicyPage() {
                         Failed delivery and returned parcels
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        If delivery fails because the address or telephone number
-                        was incorrect, the recipient was unavailable, or the
-                        parcel was refused without a valid product issue, we may
-                        charge the actual re-delivery cost or deduct unrecoverable
-                        courier charges from an otherwise available refund. We
-                        will contact you before re-dispatch to confirm the cost.
+                        If delivery fails because the address or telephone
+                        number was incorrect, the recipient was unavailable, or
+                        the parcel was refused without a valid product issue, we
+                        may charge the actual re-delivery cost or deduct
+                        unrecoverable courier charges from an otherwise
+                        available refund. We will contact you before re-dispatch
+                        to confirm the cost.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -154,8 +159,8 @@ export default function ShippingDeliveryPolicyPage() {
                             drhasannasir12@gmail.com
                         </a>{" "}
                         or call {ONLINE_CONSULTATION_PHONE.display}. Include
-                        your order number if
-                        one was provided in your order confirmation.
+                        your order number if one was provided in your order
+                        confirmation.
                     </p>
 
                     <div className="mt-10 pt-8 border-t border-line-soft">

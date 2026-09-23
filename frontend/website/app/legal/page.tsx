@@ -31,7 +31,8 @@ const policies = [
     {
         href: "/health-product-disclaimer",
         title: "Health Disclaimer",
-        description: "Important information about health and wellness products.",
+        description:
+            "Important information about health and wellness products.",
     },
     {
         href: "/cookie-policy",
@@ -53,7 +54,7 @@ export default function LegalPage() {
                 <p className="mt-4 max-w-[58ch] text-ink-soft">
                     Read the policies that apply to consultation services with
                     Dr. Hasan Nasir Cheema and to products sold separately
-                    through Zaade Sehat by Dr Hasan Nasir.
+                    through Zaade Sehat by Dr. Hasan Nasir Cheema.
                 </p>
 
                 <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -61,7 +62,7 @@ export default function LegalPage() {
                         <Link
                             key={policy.href}
                             href={policy.href}
-                            className="group rounded-xl border border-line-soft bg-paper-raised p-5 no-underline transition hover:-translate-y-px hover:border-sage hover:no-underline"
+                            className="group rounded-xl border border-line-soft bg-paper-raised p-5 no-underline transition-colors duration-200 hover:border-forest hover:shadow-md hover:no-underline"
                         >
                             <h2 className="font-display text-[1.15rem] font-semibold text-ink group-hover:text-sage-deep">
                                 {policy.title}

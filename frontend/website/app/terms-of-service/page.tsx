@@ -5,7 +5,7 @@ import { CLINIC_PHONE, ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 export const metadata: Metadata = {
     title: "Terms and Conditions",
     description:
-        "Terms governing consultations with Dr. Hasan Nasir Cheema and purchases from Zaade Sehat by Dr Hasan Nasir.",
+        "Terms governing consultations with Dr. Hasan Nasir Cheema and purchases from Zaade Sehat by Dr. Hasan Nasir Cheema.",
 };
 
 export default function TermsOfServicePage() {
@@ -42,8 +42,8 @@ export default function TermsOfServicePage() {
                         Consultations are offered by Dr. Hasan Nasir Cheema.
                         Health and wellness products available through
                         shop.drhasannasir.com are offered under the separate
-                        retail brand Zaade Sehat by Dr Hasan Nasir. Contact:
-                        Street 4, Chak 199, Gattwala, East Canal Road,
+                        retail brand Zaade Sehat by Dr. Hasan Nasir Cheema.
+                        Contact: Street 4, Chak 199, Gattwala, East Canal Road,
                         Faisalabad, Pakistan; online consultation{" "}
                         {ONLINE_CONSULTATION_PHONE.display}; clinic{" "}
                         {CLINIC_PHONE.display}; or{" "}
@@ -62,8 +62,8 @@ export default function TermsOfServicePage() {
                     <p className="mt-3 text-ink-soft">
                         General health, nutrition, and product information on
                         the websites is educational and does not replace
-                        individual medical advice, diagnosis, or treatment.
-                        Read the{" "}
+                        individual medical advice, diagnosis, or treatment. Read
+                        the{" "}
                         <Link
                             href="/health-product-disclaimer"
                             className="text-sage-deep hover:underline"
@@ -78,9 +78,10 @@ export default function TermsOfServicePage() {
                     </h2>
                     <ul className="mt-3 space-y-2 pl-5 list-disc text-ink-soft">
                         <li>
-                            Please read the full product description, ingredients,
-                            net quantity, directions, warnings, storage
-                            instructions, and expiry information before use.
+                            Please read the full product description,
+                            ingredients, net quantity, directions, warnings,
+                            storage instructions, and expiry information before
+                            use.
                         </li>
                         <li>
                             Product packaging may differ slightly from website
@@ -106,22 +107,22 @@ export default function TermsOfServicePage() {
                         fees are shown before you submit the order. Products,
                         prices, and availability may change. If a material
                         pricing or listing error affects your order, we will
-                        contact you before fulfilment or cancel the affected item
-                        and refund any amount already paid for it.
+                        contact you before fulfilment or cancel the affected
+                        item and refund any amount already paid for it.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Orders and acceptance
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        Submitting an order is an offer to purchase. An automated
-                        acknowledgement confirms receipt, not acceptance. We may
-                        decline or cancel an order before dispatch if a product
-                        is unavailable, an address cannot be served, payment is
-                        not authorized, fraud is suspected, a legal restriction
-                        applies, or there is a material error in the listing or
-                        price. If we cancel a paid order, we will refund the
-                        affected amount.
+                        Submitting an order is an offer to purchase. An
+                        automated acknowledgement confirms receipt, not
+                        acceptance. We may decline or cancel an order before
+                        dispatch if a product is unavailable, an address cannot
+                        be served, payment is not authorized, fraud is
+                        suspected, a legal restriction applies, or there is a
+                        material error in the listing or price. If we cancel a
+                        paid order, we will refund the affected amount.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -227,22 +228,23 @@ export default function TermsOfServicePage() {
                     <p className="mt-3 text-ink-soft">
                         Nothing in these terms excludes liability or consumer
                         rights that cannot lawfully be excluded, including
-                        liability for fraud, wilful misconduct, gross negligence,
-                        death, or personal injury where applicable. Where
-                        liability cannot be excluded, aggregate liability is
-                        limited, to the extent permitted by law, to the amount
-                        paid for the affected product or appointment.
+                        liability for fraud, wilful misconduct, gross
+                        negligence, death, or personal injury where applicable.
+                        Where liability cannot be excluded, aggregate liability
+                        is limited, to the extent permitted by law, to the
+                        amount paid for the affected product or appointment.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Events outside reasonable control
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        We are not responsible for delay caused by events outside
-                        reasonable control, including severe weather, transport
-                        disruption, public emergencies, network outages, courier
-                        disruption, or government action. We will take reasonable
-                        steps to communicate and minimize the effect.
+                        We are not responsible for delay caused by events
+                        outside reasonable control, including severe weather,
+                        transport disruption, public emergencies, network
+                        outages, courier disruption, or government action. We
+                        will take reasonable steps to communicate and minimize
+                        the effect.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">

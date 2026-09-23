@@ -32,8 +32,8 @@ export default function PrivacyPolicyPage() {
                         (&ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses,
                         shares, and protects personal information when you use
                         drhasannasir.com, shop.drhasannasir.com, purchase a
-                        product from Zaade Sehat by Dr Hasan Nasir, book a
-                        consultation, or contact us.
+                        product from Zaade Sehat by Dr. Hasan Nasir Cheema, book
+                        a consultation, or contact us.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -109,16 +109,16 @@ export default function PrivacyPolicyPage() {
                             transaction and accounting records
                         </li>
                         <li>
-                            To respond to questions, complaints, return requests,
-                            and delivery issues
+                            To respond to questions, complaints, return
+                            requests, and delivery issues
                         </li>
                         <li>
                             To operate, secure, troubleshoot, and improve the
                             websites and shop
                         </li>
                         <li>
-                            To comply with legal, regulatory, tax, record-keeping,
-                            and dispute-resolution obligations
+                            To comply with legal, regulatory, tax,
+                            record-keeping, and dispute-resolution obligations
                         </li>
                         <li>
                             To send marketing messages only when you have asked
@@ -148,8 +148,8 @@ export default function PrivacyPolicyPage() {
                     </p>
                     <ul className="mt-3 space-y-2 pl-5 list-disc text-ink-soft">
                         <li>
-                            Website, shop, database, hosting, security, and email
-                            providers
+                            Website, shop, database, hosting, security, and
+                            email providers
                         </li>
                         <li>
                             Payment providers, banks, and fraud-prevention
@@ -193,13 +193,14 @@ export default function PrivacyPolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         We keep order, payment, delivery, and accounting records
                         for as long as reasonably needed to provide support and
-                        meet legal, tax, fraud-prevention, and dispute-resolution
-                        obligations. Appointment and related conversation records
-                        may be retained for up to 10 years for continuity of care
-                        and administrative record-keeping. Technical logs and
-                        cookies are kept for shorter periods appropriate to their
-                        purpose. Information is deleted or anonymized when it is
-                        no longer reasonably required.
+                        meet legal, tax, fraud-prevention, and
+                        dispute-resolution obligations. Appointment and related
+                        conversation records may be retained for up to 10 years
+                        for continuity of care and administrative
+                        record-keeping. Technical logs and cookies are kept for
+                        shorter periods appropriate to their purpose.
+                        Information is deleted or anonymized when it is no
+                        longer reasonably required.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -220,8 +221,8 @@ export default function PrivacyPolicyPage() {
                         personal information we hold about you, or withdraw from
                         marketing communications, by contacting us. We may need
                         to verify your identity and may retain information where
-                        required for legal, medical, accounting, fraud-prevention,
-                        or dispute-resolution purposes.
+                        required for legal, medical, accounting,
+                        fraud-prevention, or dispute-resolution purposes.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -229,20 +230,21 @@ export default function PrivacyPolicyPage() {
                     </h2>
                     <p className="mt-3 text-ink-soft">
                         We use reasonable technical and organizational measures
-                        to protect information against unauthorized access, loss,
-                        misuse, or alteration. No online system is completely
-                        secure. Please do not send full card details or
-                        unnecessary medical information through ordinary email
-                        or messaging channels.
+                        to protect information against unauthorized access,
+                        loss, misuse, or alteration. No online system is
+                        completely secure. Please do not send full card details
+                        or unnecessary medical information through ordinary
+                        email or messaging channels.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
                         Children
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        The online shop is intended for adults. A parent or legal
-                        guardian should place orders or arrange appointments for
-                        a minor and is responsible for the information provided.
+                        The online shop is intended for adults. A parent or
+                        legal guardian should place orders or arrange
+                        appointments for a minor and is responsible for the
+                        information provided.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">

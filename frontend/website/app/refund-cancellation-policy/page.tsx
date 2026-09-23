@@ -29,7 +29,7 @@ export default function RefundCancellationPolicyPage() {
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
                         This policy separates product orders placed through
-                        Zaade Sehat by Dr Hasan Nasir from consultation
+                        Zaade Sehat by Dr. Hasan Nasir Cheema from consultation
                         bookings with Dr. Hasan Nasir Cheema. Different rules
                         apply to each. Nothing in this policy limits a right or
                         remedy that cannot be excluded under applicable consumer
@@ -72,11 +72,11 @@ export default function RefundCancellationPolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         Because the shop sells food, wellness, and consumable
                         products, we cannot accept change-of-mind returns. We
-                        also cannot accept a return after a container or seal has
-                        been opened, the product has been used, or storage and
-                        handling after delivery cannot be verified, unless the
-                        product was defective, unsafe, expired, or otherwise not
-                        compliant when supplied.
+                        also cannot accept a return after a container or seal
+                        has been opened, the product has been used, or storage
+                        and handling after delivery cannot be verified, unless
+                        the product was defective, unsafe, expired, or otherwise
+                        not compliant when supplied.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -92,21 +92,20 @@ export default function RefundCancellationPolicyPage() {
                                 drhasannasir12@gmail.com
                             </a>{" "}
                             or call {ONLINE_CONSULTATION_PHONE.display} within 7
-                            calendar days of
-                            delivery.
+                            calendar days of delivery.
                         </li>
                         <li>
                             Provide the order number, product name, delivery
                             date, and a clear description of the issue.
                         </li>
                         <li>
-                            Attach clear photographs or video showing the product,
-                            batch and expiry information, seal, outer packaging,
-                            and courier label where relevant.
+                            Attach clear photographs or video showing the
+                            product, batch and expiry information, seal, outer
+                            packaging, and courier label where relevant.
                         </li>
                         <li>
-                            Wait for return or disposal instructions. Do not send
-                            a product back without authorization.
+                            Wait for return or disposal instructions. Do not
+                            send a product back without authorization.
                         </li>
                     </ol>
 
@@ -114,16 +113,17 @@ export default function RefundCancellationPolicyPage() {
                         Review and resolution
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        We may ask for additional information or arrange a return
-                        before deciding a claim. We will tell you in writing
-                        whether the claim is accepted. For an accepted claim, we
-                        will either replace the affected product or refund its
-                        price. If a replacement is unavailable, we will refund
-                        the affected product price and any basic delivery charge
-                        paid specifically for that product. We issue approved
-                        refunds to the original payment method within 14
-                        business days after approval. Your bank or payment
-                        provider may take additional time to post the amount.
+                        We may ask for additional information or arrange a
+                        return before deciding a claim. We will tell you in
+                        writing whether the claim is accepted. For an accepted
+                        claim, we will either replace the affected product or
+                        refund its price. If a replacement is unavailable, we
+                        will refund the affected product price and any basic
+                        delivery charge paid specifically for that product. We
+                        issue approved refunds to the original payment method
+                        within 14 business days after approval. Your bank or
+                        payment provider may take additional time to post the
+                        amount.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -175,8 +175,8 @@ export default function RefundCancellationPolicyPage() {
                             late arrival, or non-attendance.
                         </li>
                         <li>
-                            A confirmed appointment cannot be moved, transferred,
-                            or rescheduled by the patient.
+                            A confirmed appointment cannot be moved,
+                            transferred, or rescheduled by the patient.
                         </li>
                         <li>
                             If Dr. Hasan Nasir Cheema cancels a confirmed

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Health Product Disclaimer",
     description:
-        "Important health and safety information for food, nutrition, and wellness products sold by Zaade Sehat by Dr Hasan Nasir.",
+        "Important health and safety information for food, nutrition, and wellness products sold by Zaade Sehat by Dr. Hasan Nasir Cheema.",
 };
 
 export default function HealthProductDisclaimerPage() {
@@ -28,8 +28,8 @@ export default function HealthProductDisclaimerPage() {
                 <div className="mx-auto max-w-[720px]">
                     <div className="rounded-xl border border-honey/35 bg-honey/10 px-6 py-5 mb-10">
                         <p className="font-semibold text-[1.05rem] text-ink">
-                            Products and website content are not a substitute for
-                            individual medical advice.
+                            Products and website content are not a substitute
+                            for individual medical advice.
                         </p>
                         <p className="mt-1 text-ink-soft text-[0.95rem]">
                             A product should not be used to diagnose, treat,
@@ -43,11 +43,11 @@ export default function HealthProductDisclaimerPage() {
                         General information only
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        Product descriptions, articles, images, and other website
-                        content provide general educational and commercial
-                        information. They do not create a doctor-patient
-                        relationship and are not an individual assessment,
-                        prescription, diagnosis, or treatment plan.
+                        Product descriptions, articles, images, and other
+                        website content provide general educational and
+                        commercial information. They do not create a
+                        doctor-patient relationship and are not an individual
+                        assessment, prescription, diagnosis, or treatment plan.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -64,16 +64,17 @@ export default function HealthProductDisclaimerPage() {
                         </li>
                         <li>are under 18 or are buying for a child</li>
                         <li>
-                            have an allergy, chronic illness, digestive condition,
-                            kidney or liver condition, or another medical concern
+                            have an allergy, chronic illness, digestive
+                            condition, kidney or liver condition, or another
+                            medical concern
                         </li>
                         <li>
-                            take prescription medicine, over-the-counter medicine,
-                            or another supplement
+                            take prescription medicine, over-the-counter
+                            medicine, or another supplement
                         </li>
                         <li>
-                            are preparing for surgery or are under active medical
-                            treatment
+                            are preparing for surgery or are under active
+                            medical treatment
                         </li>
                     </ul>
 
@@ -91,13 +92,13 @@ export default function HealthProductDisclaimerPage() {
                             qualified healthcare professional advises otherwise.
                         </li>
                         <li>
-                            Do not use a product if the seal is broken, packaging
-                            appears tampered with, the product is damaged, or the
-                            expiry date has passed.
+                            Do not use a product if the seal is broken,
+                            packaging appears tampered with, the product is
+                            damaged, or the expiry date has passed.
                         </li>
                         <li>
-                            Keep products out of reach of children and store them
-                            as directed on the label.
+                            Keep products out of reach of children and store
+                            them as directed on the label.
                         </li>
                         <li>
                             Food and nutrition products should complement, not
@@ -134,11 +135,11 @@ export default function HealthProductDisclaimerPage() {
                         Product quality concern
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        If a product from Zaade Sehat by Dr Hasan Nasir is
-                        leaking, damaged, unsealed, tampered with, expired, or
-                        different from what you ordered, do not use it. Keep the
-                        product and packaging and contact us within 7 calendar
-                        days under the{" "}
+                        If a product from Zaade Sehat by Dr. Hasan Nasir Cheema
+                        is leaking, damaged, unsealed, tampered with, expired,
+                        or different from what you ordered, do not use it. Keep
+                        the product and packaging and contact us within 7
+                        calendar days under the{" "}
                         <Link
                             href="/refund-cancellation-policy"
                             className="text-sage-deep hover:underline"

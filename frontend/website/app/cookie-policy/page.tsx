@@ -29,9 +29,9 @@ export default function CookiePolicyPage() {
                     <p className="text-ink-soft">
                         This policy explains how drhasannasir.com, for
                         consultations with Dr. Hasan Nasir Cheema, and
-                        shop.drhasannasir.com, the Zaade Sehat by Dr Hasan Nasir
-                        retail shop, use cookies and similar technologies. It
-                        should be read with our{" "}
+                        shop.drhasannasir.com, the Zaade Sehat by Dr. Hasan
+                        Nasir Cheema retail shop, use cookies and similar
+                        technologies. It should be read with our{" "}
                         <Link
                             href="/privacy-policy"
                             className="text-sage-deep hover:underline"
@@ -59,10 +59,10 @@ export default function CookiePolicyPage() {
                     <p className="mt-3 text-ink-soft">
                         Essential cookies are needed for core functions such as
                         keeping items in the cart, processing checkout, securing
-                        forms, maintaining an account session, remembering cookie
-                        choices, balancing traffic, and protecting the site from
-                        abuse. The shop may not work correctly if these are
-                        blocked.
+                        forms, maintaining an account session, remembering
+                        cookie choices, balancing traffic, and protecting the
+                        site from abuse. The shop may not work correctly if
+                        these are blocked.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -70,8 +70,8 @@ export default function CookiePolicyPage() {
                     </h2>
                     <p className="mt-3 text-ink-soft">
                         Preference cookies remember choices such as display,
-                        region, language, or other settings so you do not need to
-                        enter them again on each visit.
+                        region, language, or other settings so you do not need
+                        to enter them again on each visit.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -101,12 +101,12 @@ export default function CookiePolicyPage() {
                         Your controls
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        You can use the cookie notice or preference control where
-                        available and can delete or block cookies through your
-                        browser settings. Blocking essential cookies may prevent
-                        the cart, checkout, login, booking, or security features
-                        from functioning. Browser help pages explain how to view,
-                        delete, and restrict stored cookies.
+                        You can use the cookie notice or preference control
+                        where available and can delete or block cookies through
+                        your browser settings. Blocking essential cookies may
+                        prevent the cart, checkout, login, booking, or security
+                        features from functioning. Browser help pages explain
+                        how to view, delete, and restrict stored cookies.
                     </p>
 
                     <h2 className="mt-11 text-[1.3rem] font-display font-semibold text-ink">
@@ -123,8 +123,8 @@ export default function CookiePolicyPage() {
                         Changes and contact
                     </h2>
                     <p className="mt-3 text-ink-soft">
-                        We may update this policy when website tools or providers
-                        change. Questions can be sent to{" "}
+                        We may update this policy when website tools or
+                        providers change. Questions can be sent to{" "}
                         <a
                             href="mailto:drhasannasir12@gmail.com"
                             className="text-sage-deep hover:underline"
