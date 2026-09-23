@@ -13,6 +13,7 @@ const config: Config = {
         "ink-soft": "#46595C",
         paper: "#F2EEE2",
         "paper-raised": "#FFFFFF",
+        "paper-sunken": "#EAE3D2",
         forest: "#16402E",
         whatsapp: "#25D366",
         "whatsapp-deep": "#17B24F",

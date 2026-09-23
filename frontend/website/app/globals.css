@@ -30,14 +30,51 @@
   h2,
   h3 {
     @apply font-display text-ink;
+    /* Fraunces carries an optical-size axis; large sizes get display
+       proportions automatically where the browser supports it. */
+    font-optical-sizing: auto;
+  }
+
+  h1 {
+    letter-spacing: -0.022em;
+  }
+
+  h2 {
+    letter-spacing: -0.016em;
+  }
+
+  h3 {
+    letter-spacing: -0.01em;
   }
 
   a {
     @apply text-sage-deep no-underline;
   }
 
-  a:hover {
-    @apply underline;
+  /* Underline that wipes in from the left on hover. Uses a background
+     gradient rather than text-decoration so it can be animated. */
+  a:not([class*="no-underline"]) {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0 1px;
+    transition: background-size 0.25s ease;
+    padding-bottom: 1px;
+  }
+
+  a:not([class*="no-underline"]):hover {
+    background-size: 100% 1px;
+    text-decoration: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    a:not([class*="no-underline"]) {
+      transition: none;
+    }
+  }
+
+  ::selection {
+    @apply bg-sage text-white;
   }
 
   a:focus-visible,
@@ -49,6 +86,68 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Opening letter of the introduction, set in the display serif. */
+  .drop-cap::first-letter {
+    @apply font-display text-sage-deep;
+    float: left;
+    font-size: 3.1em;
+    line-height: 0.86;
+    font-weight: 600;
+    padding-right: 0.08em;
+    margin-top: 0.05em;
+  }
+
+  /* Reading progress bar, driven by the scroll timeline. Browsers without
+     scroll-driven animations simply never paint it. */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    @apply bg-sage;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    @keyframes scroll-progress-grow {
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .scroll-progress {
+      animation: scroll-progress-grow linear;
+      animation-timeline: scroll();
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-progress {
+      display: none;
+    }
+  }
+
+  /* Card lift: transform and shadow only, so neighbours never move. */
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .card-hover:hover {
+    transform: scale(1.01);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-hover,
+    .card-hover:hover {
+      transform: none;
+      transition: none;
+    }
   }
 
   @keyframes reveal {
@@ -95,5 +194,43 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+/* Printing: policy pages should come out as plain documents. */
+@media print {
+  header,
+  footer,
+  iframe {
+    display: none !important;
+  }
+
+  .section-reveal,
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  a {
+    color: #000;
+    background-image: none;
+  }
+
+  main a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    word-break: break-all;
+  }
+
+  section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }

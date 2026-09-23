@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PolicyChrome from "@/components/PolicyChrome";
 
 export const metadata: Metadata = {
     title: "Health Product Disclaimer",
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 export default function HealthProductDisclaimerPage() {
     return (
         <>
-            <section className="px-7 pt-16 pb-8">
+            <PolicyChrome label="Health Product Disclaimer" />
+            <section className="px-7 pt-14 md:pt-18 pb-8">
                 <div className="mx-auto max-w-content">
                     <span className="font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep mb-4 inline-block">
                         Important information
@@ -24,7 +26,7 @@ export default function HealthProductDisclaimerPage() {
                 </div>
             </section>
 
-            <section className="px-7 pb-20">
+            <section className="px-7 pb-14 md:pb-18">
                 <div className="mx-auto max-w-[720px]">
                     <div className="rounded-xl border border-honey/35 bg-honey/10 px-6 py-5 mb-10">
                         <p className="font-semibold text-[1.05rem] text-ink">
@@ -162,7 +164,7 @@ export default function HealthProductDisclaimerPage() {
                         terms.
                     </p>
 
-                    <div className="mt-10 pt-8 border-t border-line-soft">
+                    <div className="mt-12 pt-8 border-t border-line-soft">
                         <Link
                             href="/"
                             className="text-sage-deep text-sm hover:underline"

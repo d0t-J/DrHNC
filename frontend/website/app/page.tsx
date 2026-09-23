@@ -8,6 +8,7 @@ import {
     WhatsAppIcon,
     YouTubeIcon,
 } from "@/components/SocialIcons";
+import SectionDivider from "@/components/SectionDivider";
 import WhatsAppFloatButton from "@/components/WhatsAppFloatButton";
 import {
     CLINIC_PHONE,
@@ -55,7 +56,7 @@ export default function HomePage() {
                     <div className="md:grid md:grid-cols-[1fr_400px] md:gap-12 md:items-start">
                         {/* Hero text */}
                         <div>
-                            <div className="pt-16 pb-14">
+                            <div className="pt-14 pb-14 md:pt-18 md:pb-18">
                                 <span className="reveal font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep mb-4 inline-block">
                                     Appointment-based consultations
                                 </span>
@@ -73,13 +74,20 @@ export default function HomePage() {
                                 <div className="reveal reveal-d3 mt-8 flex flex-wrap gap-4">
                                     <Link
                                         href="/booking"
-                                        className="inline-flex items-center gap-2 rounded-full bg-honey px-6 py-3.5 text-[0.95rem] font-semibold text-white no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-white hover:shadow-md hover:no-underline"
+                                        className="group inline-flex items-center gap-2 rounded-full bg-honey px-6 py-3.5 text-[0.95rem] font-semibold text-white no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-white hover:shadow-md hover:no-underline active:shadow-inner active:brightness-95"
                                     >
                                         Book Now
+                                        <svg
+                                            aria-hidden="true"
+                                            viewBox="0 0 20 20"
+                                            className="h-4 w-4 fill-current transition-transform duration-200 group-hover:translate-x-1"
+                                        >
+                                            <path d="M10.6 4.3a1 1 0 0 0-1.4 1.4L12.1 9H4a1 1 0 1 0 0 2h8.1l-2.9 3.3a1 1 0 0 0 1.4 1.4l4.6-4.4a1 1 0 0 0 0-1.6l-4.6-4.4Z" />
+                                        </svg>
                                     </Link>
                                     <Link
                                         href="/products"
-                                        className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition-colors duration-200 hover:border-forest-deep hover:bg-forest-deep hover:text-white hover:no-underline"
+                                        className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition-colors duration-200 hover:border-forest-deep hover:bg-forest-deep hover:text-white hover:no-underline active:shadow-inner active:brightness-95"
                                     >
                                         Shop Zaade Sehat
                                     </Link>
@@ -89,14 +97,14 @@ export default function HomePage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         aria-label="Message Dr. Hasan Nasir Cheema on WhatsApp"
-                                        className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3.5 text-[0.95rem] font-semibold text-forest-deep no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-whatsapp hover:shadow-md hover:no-underline"
+                                        className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3.5 text-[0.95rem] font-semibold text-forest-deep no-underline shadow-sm transition-colors duration-200 hover:bg-forest-deep hover:text-whatsapp hover:shadow-md hover:no-underline active:shadow-inner active:brightness-95"
                                     >
                                         Message on WhatsApp
                                     </a>
                                 </div>
 
                                 {/* Mobile photo — below CTAs, portrait, hidden on md+ */}
-                                <div className="md:hidden mt-10 relative rounded-2xl overflow-hidden bg-mist aspect-[4/5] max-h-[420px] w-full">
+                                <div className="md:hidden mt-10 relative rounded-xl overflow-hidden bg-mist aspect-[4/5] max-h-[420px] w-full ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
                                     <Image
                                         src="/images/dr-hasan-nasir.jpg"
                                         alt="Dr. Hasan Nasir Cheema, Consultant Physician"
@@ -110,8 +118,13 @@ export default function HomePage() {
 
                         {/* Photo, desktop only */}
                         <div className="hidden md:block">
-                            <div className="reveal reveal-d2 mt-16">
-                                <div className="relative rounded-2xl overflow-hidden bg-mist aspect-[3/4] max-h-[540px]">
+                            <div className="reveal reveal-d2 relative mt-16">
+                                {/* Soft green glow behind the portrait */}
+                                <div
+                                    aria-hidden="true"
+                                    className="pointer-events-none absolute -inset-6 -z-10 rounded-full bg-sage/20 blur-3xl"
+                                />
+                                <div className="relative rounded-xl overflow-hidden bg-mist aspect-[3/4] max-h-[540px] shadow-lg ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
                                     <Image
                                         src="/images/dr-hasan-nasir.jpg"
                                         alt="Dr. Hasan Nasir Cheema, Consultant Physician"
@@ -129,7 +142,7 @@ export default function HomePage() {
                     <RevealSection
                         as="div"
                         id="about"
-                        className="border-t border-line-soft py-18"
+                        className="border-t border-line-soft py-14 md:py-18"
                     >
                         <div className="grid md:grid-cols-[200px_1fr] gap-10 items-start">
                             <div>
@@ -153,7 +166,7 @@ export default function HomePage() {
                                     <span>Food and Nutrition Expert</span>
                                 </p>
                                 <div className="space-y-4 text-ink-soft text-[1.02rem]">
-                                    <p>
+                                    <p className="drop-cap">
                                         Dr. Hasan Nasir Cheema is a General
                                         Physician with over 15 years of clinical
                                         experience, with a special interest in
@@ -204,10 +217,12 @@ export default function HomePage() {
                 </div>
             </div>
 
+            <SectionDivider />
+
             {/* ── How it works ─────────────────────────────────────────── */}
             <RevealSection
                 id="how-it-works"
-                className="px-7 py-18 border-t border-line-soft bg-mist/30"
+                className="px-7 py-14 md:py-18 bg-paper-sunken"
             >
                 <div className="mx-auto max-w-content">
                     <span className="font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep">
@@ -220,12 +235,19 @@ export default function HomePage() {
                         {steps.map((step, i) => (
                             <li
                                 key={i}
-                                className="grid grid-cols-[56px_1fr] gap-5 py-5 border-t border-line-soft first:border-t-0"
+                                className="relative grid grid-cols-[44px_1fr] gap-5 pb-8 last:pb-0"
                             >
-                                <span className="font-mono text-[1rem] font-semibold text-honey-deep pt-0.5">
+                                {/* Connector line, hidden on the last step */}
+                                {i < steps.length - 1 && (
+                                    <span
+                                        aria-hidden="true"
+                                        className="absolute left-[15px] top-8 bottom-0 w-px bg-sage/30"
+                                    />
+                                )}
+                                <span className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-sage font-mono text-[0.78rem] font-semibold text-white">
                                     {String(i + 1).padStart(2, "0")}
                                 </span>
-                                <div>
+                                <div className="pt-1">
                                     <h3 className="font-body text-[1.05rem] font-semibold text-ink">
                                         {step.title}
                                     </h3>
@@ -239,10 +261,12 @@ export default function HomePage() {
                 </div>
             </RevealSection>
 
+            <SectionDivider />
+
             {/* ── Contact ──────────────────────────────────────────────── */}
             <RevealSection
                 id="contact"
-                className="px-7 py-18 border-t border-line-soft bg-paper"
+                className="px-7 py-14 md:py-18 bg-paper"
             >
                 <div className="mx-auto max-w-content">
                     <span className="font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep">
@@ -252,84 +276,91 @@ export default function HomePage() {
                         Find us
                     </h2>
 
-                    <div className="mt-8 grid sm:grid-cols-2 gap-7">
-                        <div className="sm:col-span-2 rounded-xl border border-line-soft bg-paper-raised p-5">
-                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
-                                Phone
-                            </p>
-                            <div className="mt-3 grid sm:grid-cols-2 gap-5">
-                                <div>
-                                    <p className="text-[0.85rem] font-semibold text-ink">
-                                        Online consultation
-                                    </p>
-                                    <a
-                                        href={waLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-1 block text-[1.02rem] text-sage-deep hover:underline"
-                                    >
-                                        {ONLINE_CONSULTATION_PHONE.display}
-                                    </a>
-                                    <p className="mt-1 text-[0.85rem] text-ink-soft">
-                                        WhatsApp or call · 12:00 PM–5:00 PM
-                                    </p>
-                                </div>
-                                <div>
-                                    <p className="text-[0.85rem] font-semibold text-ink">
-                                        Clinic · in-person visits
-                                    </p>
-                                    <a
-                                        href={CLINIC_PHONE.tel}
-                                        className="mt-1 block text-[1.02rem] text-sage-deep hover:underline"
-                                    >
-                                        {CLINIC_PHONE.display}
-                                    </a>
-                                    <p className="mt-1 text-[0.85rem] text-ink-soft">
-                                        In-person consultations · 6:00 PM–9:00
-                                        PM
-                                    </p>
-                                </div>
+                    <div className="mt-8 grid gap-7 md:grid-cols-3">
+                        {/* Wide column: address, then the map */}
+                        <div className="flex flex-col gap-7 md:col-span-2">
+                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                                <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
+                                    Address
+                                </p>
+                                <p className="mt-1.5 text-[1.02rem] text-ink">
+                                    Street 4, Chak 199, Gattwala, East Canal
+                                    Road, Faisalabad
+                                </p>
                             </div>
-                            <p className="mt-4 border-t border-line-soft pt-3 text-[0.85rem] text-ink-soft">
-                                These are separate lines. For online
-                                consultations and general questions, use the
-                                online consultation number. Call the clinic
-                                number only if you plan to visit the clinic.
-                            </p>
+                            <div className="flex-1 overflow-hidden rounded-xl border border-line-soft shadow-sm">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.8272059622655!2d73.18560520034163!3d31.459656544815726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226f38bb013b57%3A0x87488e41a6ef259f!2sDr.%20Hasan%20Nasir%20Cheema%20Clinic!5e0!3m2!1sen!2s!4v1781973860487!5m2!1sen!2s"
+                                    width="100%"
+                                    height="100%"
+                                    className="block min-h-[320px] w-full"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Dr. Hasan Nasir Cheema consultation location"
+                                />
+                            </div>
                         </div>
-                        <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
-                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
-                                Address
-                            </p>
-                            <p className="mt-1.5 text-[1.02rem] text-ink">
-                                Street 4, Chak 199, Gattwala, East Canal Road,
-                                Faisalabad
-                            </p>
-                        </div>
-                        <div className="rounded-xl border border-line-soft bg-paper-raised p-5">
-                            <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
-                                Email
-                            </p>
-                            <a
-                                href="mailto:drhasannasir12@gmail.com"
-                                className="mt-1.5 block text-[1.02rem] text-sage-deep hover:underline"
-                            >
-                                drhasannasir12@gmail.com
-                            </a>
-                        </div>
-                    </div>
 
-                    <div className="mt-7 rounded-xl overflow-hidden border border-line-soft">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.8272059622655!2d73.18560520034163!3d31.459656544815726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226f38bb013b57%3A0x87488e41a6ef259f!2sDr.%20Hasan%20Nasir%20Cheema%20Clinic!5e0!3m2!1sen!2s!4v1781973860487!5m2!1sen!2s"
-                            width="100%"
-                            height="360"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Dr. Hasan Nasir Cheema consultation location"
-                        />
+                        {/* Narrow column: the two phone lines, then email */}
+                        <div className="flex flex-col gap-7">
+                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                                <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
+                                    Phone
+                                </p>
+                                <div className="mt-3 space-y-4">
+                                    <div>
+                                        <p className="text-[0.85rem] font-semibold text-ink">
+                                            Online consultation
+                                        </p>
+                                        <a
+                                            href={waLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-1 block text-[1.02rem] tabular-nums text-sage-deep"
+                                        >
+                                            {ONLINE_CONSULTATION_PHONE.display}
+                                        </a>
+                                        <p className="mt-1 text-[0.85rem] tabular-nums text-ink-soft">
+                                            WhatsApp or call · 12:00 PM–5:00 PM
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p className="text-[0.85rem] font-semibold text-ink">
+                                            Clinic · in-person visits
+                                        </p>
+                                        <a
+                                            href={CLINIC_PHONE.tel}
+                                            className="mt-1 block text-[1.02rem] tabular-nums text-sage-deep"
+                                        >
+                                            {CLINIC_PHONE.display}
+                                        </a>
+                                        <p className="mt-1 text-[0.85rem] tabular-nums text-ink-soft">
+                                            In-person consultations · 6:00
+                                            PM–9:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="mt-4 border-t border-line-soft pt-3 text-[0.85rem] text-ink-soft">
+                                    These are separate lines. For online
+                                    consultations and general questions, use the
+                                    online consultation number. Call the clinic
+                                    number only if you plan to visit the clinic.
+                                </p>
+                            </div>
+                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                                <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
+                                    Email
+                                </p>
+                                <a
+                                    href="mailto:drhasannasir12@gmail.com"
+                                    className="mt-1.5 block break-words text-[1.02rem] text-sage-deep"
+                                >
+                                    drhasannasir12@gmail.com
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Social links */}

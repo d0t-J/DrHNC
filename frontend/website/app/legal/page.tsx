@@ -43,7 +43,7 @@ const policies = [
 
 export default function LegalPage() {
     return (
-        <section className="px-7 py-16 md:py-20">
+        <section className="px-7 py-14 md:py-18">
             <div className="mx-auto max-w-content">
                 <span className="font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep">
                     Legal
@@ -62,7 +62,7 @@ export default function LegalPage() {
                         <Link
                             key={policy.href}
                             href={policy.href}
-                            className="group rounded-xl border border-line-soft bg-paper-raised p-5 no-underline transition-colors duration-200 hover:border-forest hover:shadow-md hover:no-underline"
+                            className="group card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm no-underline hover:border-forest-deep hover:shadow-md hover:no-underline"
                         >
                             <h2 className="font-display text-[1.15rem] font-semibold text-ink group-hover:text-sage-deep">
                                 {policy.title}

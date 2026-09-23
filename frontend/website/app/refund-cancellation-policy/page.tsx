@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PolicyChrome from "@/components/PolicyChrome";
 import { ONLINE_CONSULTATION_PHONE } from "@/lib/contact";
 
 export const metadata: Metadata = {
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
 export default function RefundCancellationPolicyPage() {
     return (
         <>
-            <section className="px-7 pt-16 pb-8">
+            <PolicyChrome label="Refund, Return &amp; Cancellation Policy" />
+            <section className="px-7 pt-14 md:pt-18 pb-8">
                 <div className="mx-auto max-w-content">
                     <span className="font-mono text-[0.78rem] tracking-[0.12em] uppercase text-sage-deep mb-4 inline-block">
                         Legal
@@ -25,7 +27,7 @@ export default function RefundCancellationPolicyPage() {
                 </div>
             </section>
 
-            <section className="px-7 pb-20">
+            <section className="px-7 pb-14 md:pb-18">
                 <div className="mx-auto max-w-[720px]">
                     <p className="text-ink-soft">
                         This policy separates product orders placed through
@@ -202,7 +204,7 @@ export default function RefundCancellationPolicyPage() {
                         .
                     </p>
 
-                    <div className="mt-10 pt-8 border-t border-line-soft">
+                    <div className="mt-12 pt-8 border-t border-line-soft">
                         <Link
                             href="/"
                             className="text-sage-deep text-sm hover:underline"

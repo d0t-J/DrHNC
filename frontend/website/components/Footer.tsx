@@ -27,7 +27,7 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="bg-forest-deep text-paper mt-6">
+        <footer className="bg-forest-deep text-paper mt-6 border-t-4 border-sage">
             <div className="mx-auto max-w-content px-7 pt-12 pb-8">
                 <div className="flex flex-wrap justify-between gap-8">
                     {/* Left: legal identity + social */}
