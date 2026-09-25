@@ -34,8 +34,8 @@ export default function Footer() {
                     <div className="space-y-4">
                         <p className="text-sm text-paper/70 max-w-[38ch]">
                             Consultations with Dr. Hasan Nasir Cheema &middot;
-                            Street 4, Chak 199, Gattwala, East Canal Road,
-                            Faisalabad
+                            Alharam Town, near Marahab Mart II, East Canal
+                            Road, Faisalabad
                         </p>
                         <p className="text-sm text-paper/70 max-w-[38ch]">
                             Health and wellness products are available

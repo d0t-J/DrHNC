@@ -45,8 +45,8 @@ export default function TermsOfServicePage() {
                         Health and wellness products available through
                         shop.drhasannasir.com are offered under the separate
                         retail brand Zaade Sehat by Dr. Hasan Nasir Cheema.
-                        Contact: Street 4, Chak 199, Gattwala, East Canal Road,
-                        Faisalabad, Pakistan; online consultation{" "}
+                        Contact: Alharam Town, near Marahab Mart II, East Canal
+                        Road, Faisalabad, Pakistan; online consultation{" "}
                         {ONLINE_CONSULTATION_PHONE.display}; clinic{" "}
                         {CLINIC_PHONE.display}; or{" "}
                         <a

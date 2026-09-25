@@ -284,13 +284,13 @@ export default function HomePage() {
                                     Address
                                 </p>
                                 <p className="mt-1.5 text-[1.02rem] text-ink">
-                                    Street 4, Chak 199, Gattwala, East Canal
-                                    Road, Faisalabad
+                                    Alharam Town, near Marahab Mart II, East
+                                    Canal Road, Faisalabad
                                 </p>
                             </div>
                             <div className="flex-1 overflow-hidden rounded-xl border border-line-soft shadow-sm">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.8272059622655!2d73.18560520034163!3d31.459656544815726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226f38bb013b57%3A0x87488e41a6ef259f!2sDr.%20Hasan%20Nasir%20Cheema%20Clinic!5e0!3m2!1sen!2s!4v1781973860487!5m2!1sen!2s"
+                                    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s31.4603588,73.1798694!6i17!3m1!1sen!5m1!1sen"
                                     width="100%"
                                     height="100%"
                                     className="block min-h-[320px] w-full"
