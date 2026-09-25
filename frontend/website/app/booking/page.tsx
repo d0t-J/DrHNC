@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Book a Consultation",
@@ -30,12 +31,12 @@ export default function BookingPage() {
                     >
                         Continue to appointment booking
                     </a>
-                    <a
-                        href="https://shop.drhasannasir.com/"
+                    <Link
+                        href="/products"
                         className="inline-flex items-center rounded-full border border-line px-6 py-3.5 text-[0.95rem] font-semibold text-ink no-underline transition-colors duration-200 hover:border-forest-deep hover:bg-forest-deep hover:text-white hover:no-underline active:shadow-inner active:brightness-95"
                     >
                         Shop Zaade Sehat
-                    </a>
+                    </Link>
                 </div>
 
                 <p className="mt-8 rounded-xl border border-line-soft bg-mist/30 px-5 py-4 shadow-sm text-[0.94rem] text-ink-soft">
