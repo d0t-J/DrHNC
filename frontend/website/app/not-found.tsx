@@ -55,7 +55,9 @@ export default function NotFound() {
                 <p className="mt-8 text-[0.92rem] text-ink-soft">
                     Online consultation ·{" "}
                     <a
-                        href={ONLINE_CONSULTATION_PHONE.tel}
+                        href={ONLINE_CONSULTATION_PHONE.whatsapp}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="tabular-nums text-sage-deep"
                     >
                         {ONLINE_CONSULTATION_PHONE.display}

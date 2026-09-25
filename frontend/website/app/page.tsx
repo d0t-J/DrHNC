@@ -331,14 +331,15 @@ export default function HomePage() {
                                             Clinic · in-person visits
                                         </p>
                                         <a
-                                            href={CLINIC_PHONE.tel}
+                                            href={CLINIC_PHONE.whatsapp}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="mt-1 block text-[1.02rem] tabular-nums text-sage-deep"
                                         >
                                             {CLINIC_PHONE.display}
                                         </a>
                                         <p className="mt-1 text-[0.85rem] tabular-nums text-ink-soft">
-                                            In-person consultations · 6:00
-                                            PM–9:00 PM
+                                            WhatsApp or call · 6:00 PM–9:00 PM
                                         </p>
                                     </div>
                                 </div>
