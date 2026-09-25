@@ -132,6 +132,96 @@
     }
   }
 
+  /* Scroll-linked reveal. The animation is tied to the element's own
+     position in the viewport, so it runs at the reader's scroll speed on
+     any device and never depends on a timer or a scroll listener.
+     Browsers without scroll-driven animations show the content normally. */
+  @keyframes reveal-rise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal-on-scroll {
+        animation: reveal-rise linear both;
+        animation-timeline: view();
+        animation-range: entry 5% cover 28%;
+      }
+
+      /* Shorter travel on phones, where the viewport is small and a long
+         rise reads as jumpy. */
+      @media (max-width: 640px) {
+        @keyframes reveal-rise {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* Route change: the incoming page fades up. */
+  @keyframes route-fade {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .route-fade {
+    animation: route-fade 0.28s ease-out both;
+  }
+
+  /* Placeholder for content that has not painted yet: an image still
+     downloading, a map iframe, or a slow route. The sweep marks it as
+     pending rather than broken. */
+  @keyframes skeleton-sweep {
+    to {
+      background-position: -200% 0;
+    }
+  }
+
+  .skeleton {
+    background-color: theme("colors.mist");
+    background-image: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.65) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    background-size: 200% 100%;
+    background-position: 200% 0;
+    background-repeat: no-repeat;
+    animation: skeleton-sweep 1.6s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .route-fade {
+      animation: none;
+    }
+
+    .skeleton {
+      background-image: none;
+      animation: none;
+    }
+  }
+
   /* Card lift: transform and shadow only, so neighbours never move. */
   .card-hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease,

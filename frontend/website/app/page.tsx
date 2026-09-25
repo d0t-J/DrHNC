@@ -108,7 +108,7 @@ export default function HomePage() {
                                 </div>
 
                                 {/* Mobile photo — below CTAs, portrait, hidden on md+ */}
-                                <div className="md:hidden mt-10 relative rounded-xl overflow-hidden bg-mist aspect-[4/5] max-h-[420px] w-full ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
+                                <div className="md:hidden mt-10 relative rounded-xl overflow-hidden skeleton aspect-[4/5] max-h-[420px] w-full ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
                                     <Image
                                         src="/images/dr-hasan-nasir.jpg"
                                         alt="Dr. Hasan Nasir Cheema, Consultant Physician"
@@ -128,7 +128,7 @@ export default function HomePage() {
                                     aria-hidden="true"
                                     className="pointer-events-none absolute -inset-6 -z-10 rounded-full bg-sage/20 blur-3xl"
                                 />
-                                <div className="relative rounded-xl overflow-hidden bg-mist aspect-[3/4] max-h-[540px] shadow-lg ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
+                                <div className="relative rounded-xl overflow-hidden skeleton aspect-[3/4] max-h-[540px] shadow-lg ring-1 ring-line-soft ring-offset-4 ring-offset-paper">
                                     <Image
                                         src="/images/dr-hasan-nasir.jpg"
                                         alt="Dr. Hasan Nasir Cheema, Consultant Physician"
@@ -239,7 +239,7 @@ export default function HomePage() {
                         {steps.map((step, i) => (
                             <li
                                 key={i}
-                                className="relative grid grid-cols-[44px_1fr] gap-5 pb-8 last:pb-0"
+                                className="reveal-on-scroll relative grid grid-cols-[44px_1fr] gap-5 pb-8 last:pb-0"
                             >
                                 {/* Connector line, hidden on the last step */}
                                 {i < steps.length - 1 && (
@@ -283,7 +283,7 @@ export default function HomePage() {
                     <div className="mt-8 grid gap-7 md:grid-cols-3">
                         {/* Wide column: address, then the map */}
                         <div className="flex flex-col gap-7 md:col-span-2">
-                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                            <div className="reveal-on-scroll card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
                                 <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
                                     Address
                                 </p>
@@ -292,12 +292,16 @@ export default function HomePage() {
                                     Canal Road, Faisalabad
                                 </p>
                             </div>
-                            <div className="flex-1 overflow-hidden rounded-xl border border-line-soft shadow-sm">
+                            <div className="reveal-on-scroll relative flex-1 overflow-hidden rounded-xl border border-line-soft shadow-sm">
+                                <div
+                                    aria-hidden="true"
+                                    className="skeleton absolute inset-0"
+                                />
                                 <iframe
                                     src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s31.4603588,73.1798694!6i17!3m1!1sen!5m1!1sen"
                                     width="100%"
                                     height="100%"
-                                    className="block min-h-[320px] w-full"
+                                    className="relative block min-h-[320px] w-full"
                                     style={{ border: 0 }}
                                     allowFullScreen
                                     loading="lazy"
@@ -309,7 +313,7 @@ export default function HomePage() {
 
                         {/* Narrow column: the two phone lines, then email */}
                         <div className="flex flex-col gap-7">
-                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                            <div className="reveal-on-scroll card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
                                 <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
                                     Phone
                                 </p>
@@ -354,7 +358,7 @@ export default function HomePage() {
                                     number only if you plan to visit the clinic.
                                 </p>
                             </div>
-                            <div className="card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
+                            <div className="reveal-on-scroll card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm hover:shadow-md">
                                 <p className="font-mono text-[0.75rem] tracking-[0.08em] uppercase text-ink-soft">
                                     Email
                                 </p>

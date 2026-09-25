@@ -61,39 +61,76 @@ export default function Navbar() {
                     ))}
                 </nav>
 
-                {/* Mobile toggle */}
+                {/* Mobile toggle: three bars that morph into a cross */}
                 <button
-                    className="md:hidden rounded-lg border border-paper/40 px-3 py-2 text-paper text-sm font-medium transition-colors duration-200 hover:bg-forest-soft hover:text-white"
-                    aria-label="Toggle menu"
+                    className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-paper/40 text-paper transition-colors duration-200 hover:bg-forest-soft hover:text-white active:scale-95"
+                    aria-label={open ? "Close menu" : "Open menu"}
                     aria-expanded={open}
+                    aria-controls="mobile-navigation"
                     onClick={() => setOpen((v) => !v)}
                 >
-                    {open ? "Close" : "Menu"}
+                    <span aria-hidden="true" className="relative block h-4 w-5">
+                        <span
+                            className={`absolute left-0 block h-0.5 w-5 rounded-full bg-current transition-transform duration-300 ease-out ${
+                                open ? "top-[7px] rotate-45" : "top-0"
+                            }`}
+                        />
+                        <span
+                            className={`absolute left-0 top-[7px] block h-0.5 w-5 rounded-full bg-current transition-opacity duration-200 ${
+                                open ? "opacity-0" : "opacity-100"
+                            }`}
+                        />
+                        <span
+                            className={`absolute left-0 block h-0.5 w-5 rounded-full bg-current transition-transform duration-300 ease-out ${
+                                open ? "top-[7px] -rotate-45" : "top-[14px]"
+                            }`}
+                        />
+                    </span>
                 </button>
             </div>
 
-            {/* Mobile nav */}
-            {open && (
+            {/* Mobile nav: the wrapper animates its own height open and shut */}
+            <div
+                className={`md:hidden grid overflow-hidden bg-forest-deep transition-[grid-template-rows,opacity] duration-300 ease-out ${
+                    open
+                        ? "grid-rows-[1fr] border-t border-paper/15 opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                }`}
+            >
                 <nav
-                    className="md:hidden flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-paper/15 bg-forest-deep"
+                    id="mobile-navigation"
+                    className="min-h-0 overflow-hidden"
                     aria-label="Mobile navigation"
+                    aria-hidden={!open}
                 >
-                    {navLinks.map((l) => (
-                        <Link
-                            key={l.href}
-                            href={l.href}
-                            className={`inline-flex w-fit items-center rounded-full px-3 py-2 text-[0.92rem] no-underline transition-colors duration-200 hover:bg-forest-soft hover:text-white ${
-                                l.emphasized
-                                    ? "font-semibold text-paper"
-                                    : "font-medium text-paper/75"
-                            }`}
-                            onClick={() => setOpen(false)}
-                        >
-                            {l.label}
-                        </Link>
-                    ))}
+                    <div className="flex flex-col gap-1 px-4 pb-5 pt-2">
+                        {navLinks.map((l, i) => (
+                            <Link
+                                key={l.href}
+                                href={l.href}
+                                tabIndex={open ? 0 : -1}
+                                style={{
+                                    transitionDelay: open
+                                        ? `${80 + i * 55}ms`
+                                        : "0ms",
+                                }}
+                                className={`inline-flex w-fit items-center rounded-full px-3 py-2 text-[0.92rem] no-underline transition-all duration-300 ease-out hover:bg-forest-soft hover:text-white ${
+                                    open
+                                        ? "translate-x-0 opacity-100"
+                                        : "-translate-x-2 opacity-0"
+                                } ${
+                                    l.emphasized
+                                        ? "font-semibold text-paper"
+                                        : "font-medium text-paper/75"
+                                }`}
+                                onClick={() => setOpen(false)}
+                            >
+                                {l.label}
+                            </Link>
+                        ))}
+                    </div>
                 </nav>
-            )}
+            </div>
         </header>
     );
 }

@@ -63,7 +63,7 @@ export default function LegalPage() {
                         <Link
                             key={policy.href}
                             href={policy.href}
-                            className="group card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm no-underline hover:border-forest-deep hover:shadow-md hover:no-underline"
+                            className="reveal-on-scroll group card-hover rounded-xl border border-line-soft bg-paper-raised p-5 shadow-sm no-underline hover:border-forest-deep hover:shadow-md hover:no-underline"
                         >
                             <h2 className="font-display text-[1.15rem] font-semibold text-ink group-hover:text-sage-deep">
                                 {policy.title}

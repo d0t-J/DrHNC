@@ -3,6 +3,7 @@ import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RouteTransition from "@/components/RouteTransition";
 import { clinicJsonLd, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const fraunces = Fraunces({
@@ -97,7 +98,9 @@ export default function RootLayout({
                     }}
                 />
                 <Navbar />
-                <main className="flex-1">{children}</main>
+                <main className="flex-1">
+                    <RouteTransition>{children}</RouteTransition>
+                </main>
                 <Footer />
             </body>
         </html>
