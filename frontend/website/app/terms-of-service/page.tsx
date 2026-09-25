@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Terms and Conditions",
     description:
         "Terms governing consultations with Dr. Hasan Nasir Cheema and purchases from Zaade Sehat by Dr. Hasan Nasir Cheema.",
+    alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

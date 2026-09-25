@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Refund, Return & Cancellation Policy",
     description:
         "Returns and refunds for Zaade Sehat products, plus cancellation terms for appointments with Dr. Hasan Nasir Cheema.",
+    alternates: { canonical: "/refund-cancellation-policy" },
 };
 
 export default function RefundCancellationPolicyPage() {

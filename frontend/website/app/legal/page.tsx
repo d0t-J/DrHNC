@@ -5,6 +5,7 @@ export const metadata: Metadata = {
     title: "Legal Information",
     description:
         "Policies and legal information for Dr. Hasan Nasir Cheema's consultation services and Zaade Sehat product shop.",
+    alternates: { canonical: "/legal" },
 };
 
 const policies = [

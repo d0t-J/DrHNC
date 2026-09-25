@@ -4,6 +4,7 @@ export const metadata: Metadata = {
     title: "Book a Consultation",
     description:
         "Book an online or in-person consultation with Dr. Hasan Nasir Cheema.",
+    alternates: { canonical: "/booking" },
 };
 
 export default function BookingPage() {

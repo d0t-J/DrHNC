@@ -3,6 +3,7 @@ import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { clinicJsonLd, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const fraunces = Fraunces({
     subsets: ["latin"],
@@ -26,12 +27,55 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL(SITE_URL),
     title: {
-        default: "Dr. Hasan Nasir Cheema",
+        default: "Consultant Physician in Faisalabad | Dr. Hasan Nasir Cheema",
         template: "%s | Dr. Hasan Nasir Cheema",
     },
     description:
-        "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Health and wellness products are available separately from Zaade Sehat by Dr. Hasan Nasir Cheema Cheema.",
+        "Dr. Hasan Nasir Cheema is a consultant physician in Faisalabad with over 15 years of experience in gut health, anxiety and nutrition. Book an online or in-person consultation.",
+    applicationName: SITE_NAME,
+    authors: [{ name: SITE_NAME, url: SITE_URL }],
+    creator: SITE_NAME,
+    publisher: SITE_NAME,
+    alternates: {
+        canonical: "/",
+    },
+    openGraph: {
+        type: "website",
+        siteName: SITE_NAME,
+        locale: "en_PK",
+        url: SITE_URL,
+        title: "Consultant Physician in Faisalabad | Dr. Hasan Nasir Cheema",
+        description:
+            "Online and in-person consultations with Dr. Hasan Nasir Cheema, consultant physician in Faisalabad. Appointments are booked and paid for in advance.",
+        images: [
+            {
+                url: "/images/dr-hasan-nasir.jpg",
+                width: 1500,
+                height: 1500,
+                alt: "Dr. Hasan Nasir Cheema, Consultant Physician",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Consultant Physician in Faisalabad | Dr. Hasan Nasir Cheema",
+        description:
+            "Online and in-person consultations with Dr. Hasan Nasir Cheema, consultant physician in Faisalabad.",
+        images: ["/images/dr-hasan-nasir.jpg"],
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
+    category: "health",
 };
 
 export default function RootLayout({
@@ -41,10 +85,17 @@ export default function RootLayout({
 }>) {
     return (
         <html
-            lang="en"
+            lang="en-PK"
             className={`${fraunces.variable} ${inter.variable} ${ibmPlexMono.variable}`}
         >
             <body className="flex min-h-screen flex-col">
+                <script
+                    type="application/ld+json"
+                    // Structured data is static and contains no user input.
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(clinicJsonLd),
+                    }}
+                />
                 <Navbar />
                 <main className="flex-1">{children}</main>
                 <Footer />

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy",
     description:
         "How Dr. Hasan Nasir Cheema handles information for consultations and Zaade Sehat product orders.",
+    alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

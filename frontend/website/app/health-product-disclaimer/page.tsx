@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Health Product Disclaimer",
     description:
         "Important health and safety information for food, nutrition, and wellness products sold by Zaade Sehat by Dr. Hasan Nasir Cheema.",
+    alternates: { canonical: "/health-product-disclaimer" },
 };
 
 export default function HealthProductDisclaimerPage() {

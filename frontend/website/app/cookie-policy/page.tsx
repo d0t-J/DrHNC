@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: "Cookie Policy",
     description:
         "How Dr. Hasan Nasir Cheema's consultation site and Zaade Sehat shop use cookies and similar technologies.",
+    alternates: { canonical: "/cookie-policy" },
 };
 
 export default function CookiePolicyPage() {

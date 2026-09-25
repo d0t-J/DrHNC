@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "Shipping & Delivery Policy",
     description:
         "Delivery areas, charges, order handling, and delivery issue reporting for Zaade Sehat by Dr. Hasan Nasir Cheema.",
+    alternates: { canonical: "/shipping-delivery-policy" },
 };
 
 export default function ShippingDeliveryPolicyPage() {

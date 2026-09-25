@@ -17,9 +17,13 @@ import {
 } from "@/lib/contact";
 
 export const metadata: Metadata = {
-    title: "Dr. Hasan Nasir Cheema Clinic",
+    title: {
+        absolute:
+            "Consultant Physician in Faisalabad | Dr. Hasan Nasir Cheema",
+    },
     description:
         "Book online or in-person consultations with Dr. Hasan Nasir Cheema. Visit Zaade Sehat by Dr. Hasan Nasir Cheema for separately branded health and wellness products.",
+    alternates: { canonical: "/" },
 };
 
 const steps = [
