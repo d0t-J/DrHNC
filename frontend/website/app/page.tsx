@@ -53,7 +53,7 @@ export default function HomePage() {
 
     return (
         <>
-            <WhatsAppFloatButton href={waLink} targetId="whatsapp-hero-cta" />
+            <WhatsAppFloatButton href={waLink} targetId="about" />
             {/* ── Hero + About ────────────────────────────────────────── */}
             <div className="px-7 bg-gradient-to-b from-mist/60 via-mist/20 to-paper pb-4">
                 <div className="mx-auto max-w-content">

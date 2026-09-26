@@ -14,17 +14,26 @@ export default function WhatsAppFloatButton({
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const heroCta = document.getElementById(targetId);
+        const target = document.getElementById(targetId);
 
-        if (!heroCta) {
+        if (!target) {
             return;
         }
 
-        const observer = new IntersectionObserver(([entry]) => {
-            setIsVisible(entry.boundingClientRect.bottom <= 0);
-        });
+        // Show the button once the target section reaches the middle of the
+        // screen, and keep it shown for everything below. The negative bottom
+        // margin holds it back while the target is only peeking in at the
+        // bottom of a tall viewport.
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(
+                    entry.isIntersecting || entry.boundingClientRect.top < 0,
+                );
+            },
+            { rootMargin: "0px 0px -50% 0px" },
+        );
 
-        observer.observe(heroCta);
+        observer.observe(target);
         return () => observer.disconnect();
     }, [targetId]);
 

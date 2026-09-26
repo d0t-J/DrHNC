@@ -172,15 +172,15 @@
     }
   }
 
-  /* Route change: the incoming page fades up. */
+  /* Route change: the incoming page fades in. Opacity only — a transform
+     here would make the wrapper the containing block for every fixed child,
+     which strands the floating WhatsApp button inside the page. */
   @keyframes route-fade {
     from {
       opacity: 0;
-      transform: translateY(6px);
     }
     to {
       opacity: 1;
-      transform: none;
     }
   }
 
