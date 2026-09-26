@@ -288,7 +288,7 @@ export default function HomePage() {
                                     Address
                                 </p>
                                 <p className="mt-1.5 text-[1.02rem] text-ink">
-                                    Alharam Town, near Marahab Mart II, East
+                                    Al-Hamra Town, near Marhaba Mart II, East
                                     Canal Road, Faisalabad
                                 </p>
                             </div>
