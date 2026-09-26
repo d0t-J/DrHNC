@@ -10,7 +10,7 @@ export const SITE_NAME = "Dr. Hasan Nasir Cheema";
 export const SHOP_URL = "https://shop.drhasannasir.com/";
 
 export const CLINIC_ADDRESS = {
-    street: "Alharam Town, near Marahab Mart II, East Canal Road",
+    street: "Al-Hamra Town, near Marhaba Mart II, East Canal Road",
     city: "Faisalabad",
     region: "Punjab",
     country: "PK",

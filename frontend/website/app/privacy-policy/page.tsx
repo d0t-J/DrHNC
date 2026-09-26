@@ -46,8 +46,8 @@ export default function PrivacyPolicyPage() {
                         Dr. Hasan Nasir Cheema is responsible for the personal
                         information described in this policy. Zaade Sehat by Dr
                         Hasan Nasir is the separate retail brand used for
-                        product orders. Our consultation location is Alharam
-                        Town, near Marahab Mart II, East Canal Road, Faisalabad,
+                        product orders. Our consultation location is Al-Hamra
+                        Town, near Marhaba Mart II, East Canal Road, Faisalabad,
                         Pakistan. Privacy questions can be sent to{" "}
                         <a
                             href="mailto:drhasannasir12@gmail.com"
