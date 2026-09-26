@@ -169,7 +169,7 @@ export default function HomePage() {
                                     <span aria-hidden="true">·</span>
                                     <span>Food and Nutrition Expert</span>
                                 </p>
-                                <div className="space-y-4 text-ink-soft text-[1.02rem]">
+                                <div className="max-w-[72ch] space-y-4 text-ink-soft text-[1.02rem]">
                                     <p className="drop-cap">
                                         Dr. Hasan Nasir Cheema is a General
                                         Physician with over 15 years of clinical

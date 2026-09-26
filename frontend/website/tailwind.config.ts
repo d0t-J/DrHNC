@@ -33,7 +33,7 @@ const config: Config = {
         mono: ["var(--font-ibm-plex-mono)", "SF Mono", "Menlo", "monospace"],
       },
       maxWidth: {
-        content: "1080px",
+        content: "1290px",
       },
       spacing: {
         18: "4.5rem", // 72px — matches design reference section padding
